@@ -1,0 +1,23 @@
+.input-before::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 32px;
+  background-color: #068fff;
+  border-radius: 8px;
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
